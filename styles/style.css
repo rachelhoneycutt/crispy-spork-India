@@ -4,7 +4,7 @@ body {
     font-weight: bolder;
 }
 
-.loginPage, .signUp {
+.homePage, .signUp {
     border: 4px solid black;
     margin: 5% 10%;
     padding: 2%;

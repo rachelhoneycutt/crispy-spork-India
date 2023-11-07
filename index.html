@@ -15,9 +15,9 @@
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" href="https://rachelhoneycutt.github.io/urban-tribble-hotel">Home</a>
+          <a class="nav-link active" href="https://rachelhoneycutt.github.io/crispy-spork-India/">Home</a>
           <a class="nav-link" href="https://github.com/rachelhoneycutt/urban-tribble-hotel">Repo</a>
-          <a class="nav-link" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Frachelhoneycutt.github.io%2Furban-tribble-hotel%2F" target="_blank">Look at this pages validity!!</a>
+          <a class="nav-link" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Frachelhoneycutt.github.io%2Fcrispy-spork-India%2F" target="_blank">Look at this pages validity!!</a>
           <a class="nav-link" href="https://github.com/rachelhoneycutt" target="_blank">Check out my Github!</a>
         </div>
       </div>
@@ -27,24 +27,24 @@
   <div class="container">
     <h1>Welcome to Underwater Bingo!!!</h1>
 
-    <div class="loginPage">
+    <div class="homePage">
       <h3>Please login below or sign up a new team.</h3>
       <form>
         <div class="mb-3">
           <label for="oldEmail" class="col-sm-2 col-form-label">Email:</label>
-          <input type="email" class="form-control" id="oldEmail" placeholder="name@example.com">
+          <input type="email" class="form-control" id="oldEmail" placeholder="name@example.com" required>
         </div>
 
         <div class="mb-3">
-          <label for="oldpwd" class="col-sm-2 col-form-label">Password:</label>
-          <input type="password" class="form-control" id="oldpwd" placeholder="Enter Password">
+          <label for="oldPwd" class="col-sm-2 col-form-label">Password:</label>
+          <input type="password" class="form-control" id="oldPwd" placeholder="Enter Password" autocomplete="off" required>
             <span class="input-group-btn">
               <button class="btn btn-default reveal" type="button"><i class="bi-eye-fill"></i></button>
             </span>
         </div>
 
           <br>
-          <button type="button" id="login">Login</button>
+          <button type="submit" id="login">Login</button>
           <button type="reset">Clear</button>
           <button type="button" id="signUpBTN">Sign Up</button>
         </form>
@@ -74,7 +74,7 @@
         </div>
         
         <div class="mb-3">
-          <label for="Newpwd" class="col-sm-2 col-form-label">Password:</label>
+          <label for="newPwd" class="col-sm-2 col-form-label">Password:</label>
           <input type="text" class="form-control" id="newPwd" placeholder="Enter Password">
         </div>
 
@@ -83,7 +83,7 @@
           <input type="text" class="form-control" id="team" placeholder="cool team name">
         </div>
 
-        <select class="mb-3 form-select" id="num">
+        <select class="mb-3 form-select" id="num" required>
           <option selected>Select how many members are on your team:</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
@@ -97,6 +97,10 @@
         </div>
 
         <br>
+        <!-- <div class="tooltip">Hover to see error!
+          <span class="tooltiptext">One of the boxes is not fill out.
+          </span>
+        </div> -->
         <button type="submit" id="submitBtn">Submit</button>
         <button type="reset">Clear</button>
       </form>
@@ -108,5 +112,6 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
   <script src="scripts/script.js"></script>
+  <script src="scripts/data.js"></script>
 </body>
  </html>
