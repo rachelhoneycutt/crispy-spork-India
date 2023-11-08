@@ -22,12 +22,18 @@ $(document).ready(function(){
 
     teams.push({userEmail, userPassword, teamName, fname, lname, number, teamNum});
 
-    if (userEmail == "" || userPassword == "" || teamName == "" || fname == "" || lname == "" || number == "" || teamNum == "") {
-      //$('.tooltip').show();
-      //$('.tooltip').addClass('show-tooltip');
+    if (userEmail == "" || userPassword == "" || teamName == "" || fname == "" || lname == "" || number == "" || teamNum == "0") {
+      
     } else {
       $('.signUp').hide();
       $('.homePage').show(); 
+      document.getElementById("newEmail").value = "";
+      document.getElementById("newPwd").value = "";
+      document.getElementById("team").value = "";
+      document.getElementById("fname").value = "";
+      document.getElementById("lname").value = "";
+      document.getElementById("phoneNumber").value = "";
+      document.getElementById("num").value = "0";
     }
   });
     
