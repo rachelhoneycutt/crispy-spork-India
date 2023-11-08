@@ -52,8 +52,7 @@ $(document).ready(function(){
         goSignUp();
       }
     }
-  })
-
+  });
 });
 
 function welcomePage(num) {
@@ -62,6 +61,18 @@ function welcomePage(num) {
     <h2>Team Name: ` + teams[num].teamName + `</h2>
     <h3>Captain: ` + teams[num].fname + ' ' + teams[num].lname + `</h3>
     <h4>Number of Team Members: ` + teams[num].teamNum + `<h4>
+    <button type="button" onclick=displayRules()>Rules</button>
+  `;
+};
+
+function  displayRules() {
+  let home = document.getElementsByClassName("homePage");
+  home[0].innerHTML = `
+      <ol>
+        <li>`+ rules[0] + `</li>
+        <li>`+ rules[1] + `</li>
+        <li>`+ rules[2] + `</li>
+      </ol>
   `;
 };
 

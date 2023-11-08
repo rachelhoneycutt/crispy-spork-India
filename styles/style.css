@@ -21,3 +21,10 @@ select {
     width: 67% !important;
     margin-left: 23% !important;
 }
+
+ol {
+    display: inline-block;
+    text-align: left;
+    font-weight: bold;
+    font-size: larger;
+  }
